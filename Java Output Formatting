@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String language = sc.next();
+            int score = sc.nextInt();
+            String paddedLanguage = String.format("%-15s", language); // left-justify language name to a fixed width of 15
+            String paddedScore = String.format("%03d", score); // zero-pad score to a fixed width of 3
+            System.out.println(paddedLanguage + paddedScore);
+                
+            }
+            System.out.println("================================");
+
+    }
+}
